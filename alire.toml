@@ -1,0 +1,16 @@
+name = "pgb1"
+description = "Software Dev Kit for Ada on the PGB-1"
+version = "0.1.0-dev"
+
+authors = ["Fabien Chouteau"]
+maintainers = ["Fabien Chouteau <fabien.chouteau@gmail.com>"]
+maintainers-logins = ["Fabien-Chouteau"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = "https://github.com/wee-noise-makers/pgb1-ada-sdk"
+tags = ["wnm", "audio", "synth"]
+
+[[depends-on]]
+noise_nugget_sdk = "~0.1.0-dev"
+
+[[pins]]
+noise_nugget_sdk = { path='../noise-nugget-ada-sdk' }
