@@ -1,0 +1,25 @@
+name = "example"
+description = "Shiny new project"
+version = "0.1.0-dev"
+
+authors = ["Fabien Chouteau"]
+maintainers = ["Fabien Chouteau <fabien.chouteau@gmail.com>"]
+maintainers-logins = ["Fabien-Chouteau"]
+
+executables = ["example"]
+
+[[depends-on]]
+pgb1 = "*"
+tresses = "^1.0.0"
+midi = "^1.0.0"
+
+[[pins]]
+pgb1 = { path = "../" }
+tresses = { url='git@github.com:wee-noise-maker/tresses.git', branch = "release/1.0" }
+
+[build-switches]
+release.runtime_checks = "none"
+
+[configuration.values]
+noise_nugget_sdk.System_Clock = "SYS_133MHz"
+tresses.Sample_Rate = "SR32000"

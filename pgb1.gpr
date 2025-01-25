@@ -6,6 +6,8 @@ project Pgb1 is
    for Runtime ("Ada") use Noise_Nugget_SDK'Runtime ("Ada");
    for Target use Noise_Nugget_SDK'Target;
 
+   Linker_Switches := Noise_Nugget_SDK.Linker_Switches;
+
    for Library_Name use "Pgb1";
    for Library_Version use Project'Library_Name & ".so." & Pgb1_Config.Crate_Version;
 
